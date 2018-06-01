@@ -37,6 +37,7 @@ const Endpoints = Object.freeze({
     DICOM_AETITLE_SETTINGS: "management/settings/dicom",
     INDEX: "management/tasks/index",
     UNINDEX: "management/tasks/unindex",
+    USER: "user",
     REMOVE: "management/tasks/remove",
     TASKS: "index/task",
     VERSION: "ext/version",
@@ -64,6 +65,7 @@ export const DICOM_STORAGE_SETTINGS = Endpoints.DICOM_STORAGE_SETTINGS;
 export const DICOM_AETITLE_SETTINGS = Endpoints.DICOM_AETITLE_SETTINGS;
 export const INDEX = Endpoints.INDEX;
 export const UNINDEX = Endpoints.UNINDEX;
+export const USER = Endpoints.USER;
 export const REMOVE = Endpoints.REMOVE;
 export const TASKS = Endpoints.TASKS;
 export const VERSION = Endpoints.VERSION;

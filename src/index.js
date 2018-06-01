@@ -24,6 +24,7 @@ import Endpoints from './endpoints';
 import Socket from './socket';
 import {StorageService, QueryRetrieveService} from './service';
 import Tasks from './tasks';
+import Users from './users';
 import {isDicomUUID} from './util';
 
 // private variables of the module
@@ -679,9 +680,10 @@ module.exports = function dicoogleClient(url, options = {}) {
         socket_.setToken(options.token);
     }
 
-    m.tasks = new Tasks(socket_);
-    m.storage = new StorageService(socket_);
     m.queryRetrieve = new QueryRetrieveService(socket_);
+    m.storage = new StorageService(socket_);
+    m.tasks = new Tasks(socket_);
+    m.users = new Users(socket_);
 
     return m;
 }
